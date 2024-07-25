@@ -4,7 +4,7 @@ import logo from "../Assets/nexia real logo.png";
 export function Dashboard() {
   return (
     <div className="flex flex-col items-center lg:items-start overflow-x-auto">
-      <div className="fixed top-0 w-full lg:w-auto bg-white z-10 p-5 flex justify-between items-center lg:relative lg:top-auto lg:p-0">
+      <div className="fixed top-0 right-0 w-full bg-white z-10 p-5 flex justify-between items-center lg:relative lg:top-auto lg:p-0">
         <img src={logo} alt="Nexia logo" className="pl-5 w-24 h-14 lg:m-4" />
       </div>
       <div className="pt-24 lg:pt-0 lg:p-20 w-full">
@@ -49,28 +49,28 @@ export function Dashboard() {
             </a>
           </p>
         </div>
-        <Table className="mt-4">
-          <Table.Head>
-            <Table.HeadCell>Name</Table.HeadCell>
-            <Table.HeadCell>Username</Table.HeadCell>
-            <Table.HeadCell>Date</Table.HeadCell>
-            <Table.HeadCell>Plan</Table.HeadCell>
-            <Table.HeadCell>Amount</Table.HeadCell>
-          </Table.Head>
-          <Table.Body className="divide-y">
-            <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-              <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                Raphael Fulfilled
-              </Table.Cell>
-              <Table.Cell>@asdafr</Table.Cell>
-              <Table.Cell>12/43/2023</Table.Cell>
-              <Table.Cell>
-                <p>Smart Bundle</p>
-              </Table.Cell>
-              <Table.Cell>$54456</Table.Cell>
-            </Table.Row>
-          </Table.Body>
-        </Table>
+        <div className="overflow-x-auto">
+      <Table className="min-w-full mt-4">
+        <Table.Head>
+          <Table.HeadCell>Name</Table.HeadCell>
+          <Table.HeadCell>Username</Table.HeadCell>
+          <Table.HeadCell>Date</Table.HeadCell>
+          <Table.HeadCell>Plan</Table.HeadCell>
+          <Table.HeadCell>Amount</Table.HeadCell>
+        </Table.Head>
+        <Table.Body className="divide-y">
+          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+              Raphael Fulfilled
+            </Table.Cell>
+            <Table.Cell>@asdafr</Table.Cell>
+            <Table.Cell>12/43/2023</Table.Cell>
+            <Table.Cell>Smart Bundle</Table.Cell>
+            <Table.Cell>$54456</Table.Cell>
+          </Table.Row>
+        </Table.Body>
+      </Table>
+    </div>
       </div>
     </div>
   );

@@ -7,7 +7,9 @@ export function Withdraw() {
   return (
     <div>
       <div className="flex flex-col gap-4 mb-40">
+      <div className="fixed top-0 right-0 w-full bg-white z-10 p-5 flex justify-between items-center lg:relative lg:top-auto lg:p-0">
         <img src={logo} alt="Nexia logo" className="pl-5 w-24 h-14 lg:m-4" />
+      </div>
         <h1 className="p-5 ml-96 pl-40 text-2xl">Withdraw</h1>
         <div className="flex mb-14 text-2xl">
           <p className=" pl-40 pr-96 mr-96">Balance:</p>
